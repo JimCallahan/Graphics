@@ -1,0 +1,956 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>org.scalacheck.Gen</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <a title="Go to companion" href="Gen.html"><img src="../../lib/object_to_trait_big.png" /></a>
+        <p id="owner"><a name="org" class="extype" href="../package.html">org</a>.<a name="org.scalacheck" class="extype" href="package.html">scalacheck</a></p>
+        <h1><a title="Go to companion" href="Gen.html">Gen</a></h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <span class="name">Gen</span>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains combinators for building generators.</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="org.scalacheck.Gen" class="in"><span>Gen</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.scalacheck.Gen.Params" data-isabs="false">
+      <a id="Params:Params"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Gen$$Params.html"><span class="name">Params</span></a>
+        
+        <span class="params">(<span name="size">size: Int</span>, <span name="rng">rng: Random</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Record that encapsulates all parameters required for data generation</p>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#alphaChar" data-isabs="false">
+      <a id="alphaChar:Gen[Char]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">alphaChar</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#alphaLowerChar" data-isabs="false">
+      <a id="alphaLowerChar:Gen[Char]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">alphaLowerChar</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#alphaNumChar" data-isabs="false">
+      <a id="alphaNumChar:Gen[Char]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">alphaNumChar</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#alphaStr" data-isabs="false">
+      <a id="alphaStr:Gen[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">alphaStr</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[String]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#alphaUpperChar" data-isabs="false">
+      <a id="alphaUpperChar:Gen[Char]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">alphaUpperChar</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#apply" data-isabs="false">
+      <a id="apply[T]((Params) ⇒ Option[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">apply</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: (<a name="org.scalacheck.Gen.Params" class="extype" href="Gen$$Params.html">Params</a>) ⇒ <span name="scala.Option" class="extype">Option</span>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#choose" data-isabs="false">
+      <a id="choose[T](T,T)(Choose[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">choose</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="min">min: T</span>, <span name="max">max: T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <a name="org.scalacheck.Choose" class="extype" href="Choose.html">Choose</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that generates a random value in the given (inclusive)
+ range.</p><div class="fullcomment"><div class="comment cmt"><p>A generator that generates a random value in the given (inclusive)
+ range. If the range is invalid, the generator will not generate any value.
+</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#chooseNum" data-isabs="false">
+      <a id="chooseNum[T](T,T,T*)(Numeric[T],Choose[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">chooseNum</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="minT">minT: T</span>, <span name="maxT">maxT: T</span>, <span name="specials">specials: T*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="num">num: Numeric[T]</span>, <span name="c">c: <a name="org.scalacheck.Choose" class="extype" href="Choose.html">Choose</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates numbers within the given inclusive range, with
+ extra weight on zero, +/- unity, both extremities, and any special
+ numbers provided.</p><div class="fullcomment"><div class="comment cmt"><p>Generates numbers within the given inclusive range, with
+ extra weight on zero, +/- unity, both extremities, and any special
+ numbers provided. The special numbers must lie within the given range,
+ otherwise they won't be included.</p></div></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#containerOf" data-isabs="false">
+      <a id="containerOf[C, T](Gen[T])(Buildable[T, C]):Gen[C[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">containerOf</span>
+        <span class="tparams">[<span name="C">C<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="b">b: <a name="org.scalacheck.util.Buildable" class="extype" href="util/Buildable.html">Buildable</a>[T, C]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[C[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a container of any type for which there exists an implicit
+ <code>Buildable</code> instance.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a container of any type for which there exists an implicit
+ <code>Buildable</code> instance. The elements in the container will
+ be generated by the given generator. The size of the container is
+ bounded by the size parameter used when generating values.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#containerOf1" data-isabs="false">
+      <a id="containerOf1[C, T](Gen[T])(Buildable[T, C]):Gen[C[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">containerOf1</span>
+        <span class="tparams">[<span name="C">C<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="b">b: <a name="org.scalacheck.util.Buildable" class="extype" href="util/Buildable.html">Buildable</a>[T, C]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[C[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a non-empty container of any type for which there exists an
+ implicit <code>Buildable</code> instance.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a non-empty container of any type for which there exists an
+ implicit <code>Buildable</code> instance. The elements in the container
+ will be generated by the given generator. The size of the container is
+ bounded by the size parameter used when generating values.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#containerOfN" data-isabs="false">
+      <a id="containerOfN[C, T](Int,Gen[T])(Buildable[T, C]):Gen[C[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">containerOfN</span>
+        <span class="tparams">[<span name="C">C<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="T">T</span>]</span>
+        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>, <span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="b">b: <a name="org.scalacheck.util.Buildable" class="extype" href="util/Buildable.html">Buildable</a>[T, C]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[C[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a container of any type for which there exists an implicit
+ <code>Buildable</code> instance.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a container of any type for which there exists an implicit
+ <code>Buildable</code> instance. The elements in the container will
+ be generated by the given generator. The size of the generated container
+ is given by <code>n</code>.</p></div></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#fail" data-isabs="false">
+      <a id="fail[T]:Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">fail</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that never generates a value</p>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#freqTuple" data-isabs="false">
+      <a id="freqTuple[T]((Int, T)):(Int, Gen[T])"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">freqTuple</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="t">t: (<span name="scala.Int" class="extype">Int</span>, T)</span>)</span><span class="result">: (<span name="scala.Int" class="extype">Int</span>, <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T])</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#frequency" data-isabs="false">
+      <a id="frequency[T]((Int, Gen[T])*):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">frequency</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="gs">gs: (<span name="scala.Int" class="extype">Int</span>, <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T])*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Chooses one of the given generators with a weighted random distribution</p>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#identifier" data-isabs="false">
+      <a id="identifier:Gen[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">identifier</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[String]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#listOf" data-isabs="false">
+      <a id="listOf[T](⇒ Gen[T]):Gen[List[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">listOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[List[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a list of random length.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a list of random length. The maximum length depends on the
+ size parameter. This method is equal to calling
+ <code>containerOf[List,T](g)</code>.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#listOf1" data-isabs="false">
+      <a id="listOf1[T](⇒ Gen[T]):Gen[List[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">listOf1</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[List[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a non-empty list of random length.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a non-empty list of random length. The maximum length depends
+ on the size parameter. This method is equal to calling
+ <code>containerOf1[List,T](g)</code>.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#listOfN" data-isabs="false">
+      <a id="listOfN[T](Int,Gen[T]):Gen[List[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">listOfN</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>, <span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[List[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a list of the given length.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a list of the given length. This method is equal to calling
+ <code>containerOfN[List,T](n,g)</code>.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#lzy" data-isabs="false">
+      <a id="lzy[T](⇒ Gen[T]):Gen[T] { lazy val h: org.scalacheck.Gen[T] }"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">lzy</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T] { lazy val h: org.scalacheck.Gen[T] }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Wraps a generator lazily.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a generator lazily. The given parameter is only evalutated once,
+ and not until the wrapper generator is evaluated.</p></div></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#negNum" data-isabs="false">
+      <a id="negNum[T](Numeric[T],Choose[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">negNum</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="num">num: Numeric[T]</span>, <span name="c">c: <a name="org.scalacheck.Choose" class="extype" href="Choose.html">Choose</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates negative numbers of uniform distribution, with an
+ lower bound of the negated generation size parameter.</p>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#numChar" data-isabs="false">
+      <a id="numChar:Gen[Char]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">numChar</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Char" class="extype">Char</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#numStr" data-isabs="false">
+      <a id="numStr:Gen[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">numStr</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[String]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.scalacheck.Gen#oneOf" data-isabs="false">
+      <a id="oneOf[T](Gen[T],Gen[T],Gen[T]*):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">oneOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g1">g1: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="g2">g2: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="gs">gs: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Picks a random generator from a list</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#oneOf" data-isabs="false">
+      <a id="oneOf[T](Seq[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">oneOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="xs">xs: Seq[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Picks a random value from a list</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#parameterized" data-isabs="false">
+      <a id="parameterized[T]((Params) ⇒ Gen[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">parameterized</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="f">f: (<a name="org.scalacheck.Gen.Params" class="extype" href="Gen$$Params.html">Params</a>) ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Creates a generator that can access its generation parameters</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#pick" data-isabs="false">
+      <a id="pick[T](Int,Gen[T],Gen[T],Gen[T]*):Gen[Seq[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">pick</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>, <span name="g1">g1: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="g2">g2: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="gs">gs: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[Seq[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that picks a given number of elements from a list, randomly</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#pick" data-isabs="false">
+      <a id="pick[T](Int,Iterable[T]):Gen[Seq[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">pick</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>, <span name="l">l: Iterable[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[Seq[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that picks a given number of elements from a list, randomly</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#posNum" data-isabs="false">
+      <a id="posNum[T](Numeric[T],Choose[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">posNum</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="num">num: Numeric[T]</span>, <span name="c">c: <a name="org.scalacheck.Choose" class="extype" href="Choose.html">Choose</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates positive numbers of uniform distribution, with an
+ upper bound of the generation size parameter.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resize" data-isabs="false">
+      <a id="resize[T](Int,Gen[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resize</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="s">s: <span name="scala.Int" class="extype">Int</span></span>, <span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Creates a resized version of a generator</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, T5, T6, T7, T8, T9, R]((T1, T2, T3, T4, T5, T6, T7, T8, T9) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4],Arbitrary[T5],Arbitrary[T6],Arbitrary[T7],Arbitrary[T8],Arbitrary[T9]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>, <span name="T6">T6</span>, <span name="T7">T7</span>, <span name="T8">T8</span>, <span name="T9">T9</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4, T5, T6, T7, T8, T9) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>, <span name="a5">a5: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T5]</span>, <span name="a6">a6: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T6]</span>, <span name="a7">a7: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T7]</span>, <span name="a8">a8: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T8]</span>, <span name="a9">a9: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T9]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, T5, T6, T7, T8, R]((T1, T2, T3, T4, T5, T6, T7, T8) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4],Arbitrary[T5],Arbitrary[T6],Arbitrary[T7],Arbitrary[T8]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>, <span name="T6">T6</span>, <span name="T7">T7</span>, <span name="T8">T8</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4, T5, T6, T7, T8) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>, <span name="a5">a5: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T5]</span>, <span name="a6">a6: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T6]</span>, <span name="a7">a7: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T7]</span>, <span name="a8">a8: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T8]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, T5, T6, T7, R]((T1, T2, T3, T4, T5, T6, T7) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4],Arbitrary[T5],Arbitrary[T6],Arbitrary[T7]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>, <span name="T6">T6</span>, <span name="T7">T7</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4, T5, T6, T7) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>, <span name="a5">a5: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T5]</span>, <span name="a6">a6: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T6]</span>, <span name="a7">a7: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T7]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, T5, T6, R]((T1, T2, T3, T4, T5, T6) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4],Arbitrary[T5],Arbitrary[T6]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>, <span name="T6">T6</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4, T5, T6) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>, <span name="a5">a5: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T5]</span>, <span name="a6">a6: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T6]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, T5, R]((T1, T2, T3, T4, T5) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4],Arbitrary[T5]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4, T5) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>, <span name="a5">a5: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T5]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, T4, R]((T1, T2, T3, T4) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3],Arbitrary[T4]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3, T4) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>, <span name="a4">a4: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T4]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, T3, R]((T1, T2, T3) ⇒ R)(Arbitrary[T1],Arbitrary[T2],Arbitrary[T3]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>, <span name="a3">a3: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T3]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T1, T2, R]((T1, T2) ⇒ R)(Arbitrary[T1],Arbitrary[T2]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a1">a1: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T1]</span>, <span name="a2">a2: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T2]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#resultOf" data-isabs="false">
+      <a id="resultOf[T, R]((T) ⇒ R)(Arbitrary[T]):Gen[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">resultOf</span>
+        <span class="tparams">[<span name="T">T</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T) ⇒ R</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="a">a: <a name="org.scalacheck.Arbitrary" class="extype" href="Arbitrary.html">Arbitrary</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[R]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Takes a function and returns a generator that generates arbitrary
+ results of that function by feeding it with arbitrarily generated input
+ parameters.</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#sequence" data-isabs="false">
+      <a id="sequence[C, T](Iterable[Gen[T]])(Buildable[T, C]):Gen[C[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sequence</span>
+        <span class="tparams">[<span name="C">C<span class="tparams">[<span name="_">_</span>]</span></span>, <span name="T">T</span>]</span>
+        <span class="params">(<span name="gs">gs: Iterable[<a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="b">b: <a name="org.scalacheck.util.Buildable" class="extype" href="util/Buildable.html">Buildable</a>[T, C]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[C[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Sequences generators.</p><div class="fullcomment"><div class="comment cmt"><p>Sequences generators. If any of the given generators fails, the
+ resulting generator will also fail.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#sized" data-isabs="false">
+      <a id="sized[T]((Int) ⇒ Gen[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">sized</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="f">f: (<span name="scala.Int" class="extype">Int</span>) ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Creates a generator that can access its generation size</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#someOf" data-isabs="false">
+      <a id="someOf[T](Gen[T],Gen[T],Gen[T]*):Gen[Seq[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">someOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g1">g1: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="g2">g2: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>, <span name="gs">gs: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[Seq[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that picks a random number of elements from a list</p>
+    </li><li visbl="pub" name="org.scalacheck.Gen#someOf" data-isabs="false">
+      <a id="someOf[T](Iterable[T]):Gen[Seq[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">someOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="l">l: Iterable[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[Seq[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that picks a random number of elements from a list</p>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#value" data-isabs="false">
+      <a id="value[T](T):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">value</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that always generates the given value</p><div class="fullcomment"><div class="comment cmt"><p>A generator that always generates the given value</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#wrap" data-isabs="false">
+      <a id="wrap[T](⇒ Gen[T]):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wrap</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="g">g: ⇒ <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Wraps a generator for later evaluation.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a generator for later evaluation. The given parameter is
+ evaluated each time the wrapper generator is evaluated.</p></div></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#defaultParams" data-isabs="false">
+      <a id="defaultParams:Params"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name deprecated">defaultParams</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen.Params" class="extype" href="Gen$$Params.html">Params</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use Gen.Params() instead</p></dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#elements" data-isabs="false">
+      <a id="elements[T](T*):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">elements</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="xs">xs: T*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A generator that returns a random element from a list</p><div class="fullcomment"><div class="comment cmt"><p>A generator that returns a random element from a list</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use 'oneOf' with constant generators instead.</p></dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#elementsFreq" data-isabs="false">
+      <a id="elementsFreq[T]((Int, T)*):Gen[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">elementsFreq</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="vs">vs: (<span name="scala.Int" class="extype">Int</span>, T)*</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Chooses one of the given values, with a weighted random distribution.</p><div class="fullcomment"><div class="comment cmt"><p>Chooses one of the given values, with a weighted random distribution.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use 'frequency' with constant generators instead.</p></dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#negInt" data-isabs="false">
+      <a id="negInt:Gen[Int]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">negInt</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Int" class="extype">Int</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use negNum[Int] instead</p></dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#posInt" data-isabs="false">
+      <a id="posInt:Gen[Int]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">posInt</span>
+        
+        <span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[<span name="scala.Int" class="extype">Int</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use posNum[Int] instead</p></dd></dl></div>
+    </li><li visbl="pub" name="org.scalacheck.Gen#vectorOf" data-isabs="false">
+      <a id="vectorOf[T](Int,Gen[T]):Gen[List[T]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">vectorOf</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>, <span name="g">g: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[T]</span>)</span><span class="result">: <a name="org.scalacheck.Gen" class="extype" href="Gen.html">Gen</a>[List[T]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Generates a list of the given length.</p><div class="fullcomment"><div class="comment cmt"><p>Generates a list of the given length. This method is equal to calling
+ <code>containerOfN[List,T](n,g)</code>.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Use 'listOfN' instead.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
