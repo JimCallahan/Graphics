@@ -16,6 +16,8 @@
 	  <arg value="src/org/scalagfx/io/*.scala"/>
   	  <arg value="src/org/scalagfx/math/*.scala"/>
       <arg value="src/org/scalagfx/opengl/*.scala"/>
+      <arg value="src/org/scalagfx/houdini/geo/*.scala"/>
+      <arg value="src/org/scalagfx/houdini/geo/attr/*.scala"/>
     </exec>
   </target>
   <target name ="MakeDocsJar" description="Create a jar for the ScalaGFX API documentation.">
