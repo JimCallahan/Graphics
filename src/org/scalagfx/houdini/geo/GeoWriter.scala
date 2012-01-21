@@ -31,7 +31,7 @@ class GeoWriter private (val numPoints: Int, val numPrims: Int,
   private class IntAttrValue(val value: Int)
     extends AttrValue
   {
-    def write(out: Writer) { out.write(value) }
+    def write(out: Writer) { out.write(value.toString) }
   }
   
   private class Index2iAttrValue(val value: Index2i)
@@ -195,7 +195,7 @@ class GeoWriter private (val numPoints: Int, val numPrims: Int,
       throw new IllegalArgumentException("Index out of bounds!")
     out.write(" 3 < " + i.x + " " + i.y + " " + i.z)
     if(!primAttrs.isEmpty) {
-      out.write(" [")
+      out.write(" [ ")
       for(aname <- primAttrs.keys) {
         if(primValues.contains(aname)) primValues(aname).write(out)
         else primAttrs(aname).writeUndefined(out)

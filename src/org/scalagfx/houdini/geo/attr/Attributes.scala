@@ -33,7 +33,7 @@ trait Attribute
       case VectorType => "vector"
       case StringType => "index"
     }	
-    out.write(name + " " + size + " " + astr)
+    out.write(name + " " + size + " " + astr + " ")
   }	  
   
   /** Write the place holder value when the attribute is not defined. */
