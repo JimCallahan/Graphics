@@ -39,7 +39,7 @@ class PrimitiveFloatAttr private (val name: String, val default: Double)
 object PrimitiveFloatAttr 
 {
   /** Create a new GEO Primitive Attribute of Double value type. */
-  def apply(name: String, default: Int) = new PrimitiveFloatAttr(name, default)
+  def apply(name: String, default: Double) = new PrimitiveFloatAttr(name, default)
 }
   
 class PrimitiveVec2dAttr private (val name: String, val default: Vec2d)

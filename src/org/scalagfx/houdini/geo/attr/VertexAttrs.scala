@@ -39,7 +39,7 @@ class VertexFloatAttr private (val name: String, val default: Double)
 object VertexFloatAttr 
 {
   /** Create a new GEO Vertex Attribute of Double value type. */
-  def apply(name: String, default: Int) = new VertexFloatAttr(name, default)
+  def apply(name: String, default: Double) = new VertexFloatAttr(name, default)
 }
   
 class VertexVec2dAttr private (val name: String, val default: Vec2d)

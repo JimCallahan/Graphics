@@ -39,7 +39,7 @@ class PointFloatAttr private (val name: String, val default: Double)
 object PointFloatAttr 
 {
   /** Create a new GEO Point Attribute of Double value type. */
-  def apply(name: String, default: Int) = new PointFloatAttr(name, default)
+  def apply(name: String, default: Double) = new PointFloatAttr(name, default)
 }
   
 class PointVec2dAttr private (val name: String, val default: Vec2d)

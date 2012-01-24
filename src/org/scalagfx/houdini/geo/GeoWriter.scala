@@ -131,6 +131,15 @@ class GeoWriter private (val numPoints: Int, val numPrims: Int,
     pointValues = pointValues + (name -> new IntAttrValue(value))
   }
 
+  /** Set the point attribute for the next emitted point. */
+  def setPointAttr(name: String, value: Double) {
+    if (!pointAttrs.contains(name))
+      throw new IllegalArgumentException("No point attribute name (" + name + ") is defined!")
+    if (!pointAttrs(name).isInstanceOf[PointFloatAttr])
+      throw new IllegalArgumentException("Wrong type for attribute!")
+    pointValues = pointValues + (name -> new FloatAttrValue(value))
+  }
+
   // ... 
 
   /** Write a Point along with any previously set Point Attributes. */
