@@ -224,7 +224,7 @@ class GeoWriter private (val numPoints: Int, val numPrims: Int,
 
   /** Write a polygonal line. */
   def writePolyLine(out: Writer, idx: List[Int]) {
-    out.write("Poly " + idx.size + " : " + idx.map(_.toString).reduce(_ + " " + _) + " \n")
+    out.write("Poly " + idx.size + " : " + idx.map(_.toString).reduce(_ + " " + _) + " ")
     writePrimAttrValues(out)
     out.write("\n")
   }
