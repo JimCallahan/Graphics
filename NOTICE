@@ -1,0 +1,19 @@
+Scala Graphics Library
+Copyright 2011-2012 James Michael Callahan
+
+  OpenGL bindings provided by the Lightweight Java Game Library Project.
+  See external/lwjgl/doc/LICENSE.
+  http://www.lwjgl.org
+
+  Graph support provided by Graph for Scala.
+  http://www.assembla.com/spaces/scala-graph/wiki
+
+  Unit testing provided by JUnit.
+  http://www.junit.org
+
+  Specification based testing provided by Scalacheck.
+  http://code.google.com/p/scalacheck
+
+  Testing framework provided by Scalatest developed by Artima, Inc.
+  See external/scalatest/LICENSE.
+  http://www.artima.com

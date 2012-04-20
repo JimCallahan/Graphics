@@ -1,3 +1,6 @@
+// Copyright 2011-2012 James Michael Callahan
+// See LICENSE-2.0 file for licensing information.
+
 package demos.misc
 
 import org.scalagfx.core.{ZoomCamera,ZoomController}

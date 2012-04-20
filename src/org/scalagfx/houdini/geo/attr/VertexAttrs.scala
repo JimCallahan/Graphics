@@ -1,3 +1,6 @@
+// Copyright 2011-2012 James Michael Callahan
+// See LICENSE-2.0 file for licensing information.
+
 package org.scalagfx.houdini.geo.attr
 
 import org.scalagfx.math.{Index2i, Index3i, Vec2d, Vec3d}

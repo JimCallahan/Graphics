@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="ScalaGFX.MakeJar" basedir=".">
-  <target name ="MakeJar" description="Create a jar for the ScalaGFX project.">
-    <jar jarfile="target/ScalaGFX.jar" basedir="bin"/>
-  </target>
-  <target name="Scaladoc">
-    <exec executable="cmd">
-      <arg value="/c"/>
-      <arg value="scaladoc.bat"/>
-      <arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64"/>
-      <arg value="-classpath"/>
-      <arg value="external/lwjgl/jar/lwjgl_util.jar;external/lwjgl/jar/lwjgl.jar"/>
-	  <arg value="-d"/>
-	  <arg value="docs"/>
-	  <arg value="src/org/scalagfx/core/*.scala"/>
-	  <arg value="src/org/scalagfx/io/*.scala"/>
-  	  <arg value="src/org/scalagfx/math/*.scala"/>
-      <arg value="src/org/scalagfx/opengl/*.scala"/>
-      <arg value="src/org/scalagfx/houdini/geo/*.scala"/>
-      <arg value="src/org/scalagfx/houdini/geo/attr/*.scala"/>
-    </exec>
-  </target>
-  <target name ="MakeDocsJar" description="Create a jar for the ScalaGFX API documentation.">
-    <jar jarfile="target/ScalaGFXDocs.jar" basedir="docs"/>
-  </target>
-  <target name="SuperClean">
-    <delete>
-      <fileset dir="target"></fileset>
-      <fileset dir="docs"></fileset>
-    </delete>
-  </target>
+	<target name="MakeJar" description="Create a jar for the ScalaGFX project.">
+		<jar jarfile="target/ScalaGFX.jar" basedir="bin" />
+	</target>
+	<target name="Scaladoc">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scaladoc.bat" />
+			<arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64" />
+			<arg value="-classpath" />
+			<arg value="external/lwjgl/jar/lwjgl_util.jar;external/lwjgl/jar/lwjgl.jar" />
+			<arg value="-d" />
+			<arg value="docs" />
+			<arg value="src/org/scalagfx/core/*.scala" />
+			<arg value="src/org/scalagfx/io/*.scala" />
+			<arg value="src/org/scalagfx/math/*.scala" />
+			<arg value="src/org/scalagfx/math2/*.scala" />
+			<arg value="src/org/scalagfx/opengl/*.scala" />
+			<arg value="src/org/scalagfx/houdini/geo/*.scala" />
+			<arg value="src/org/scalagfx/houdini/geo/attr/*.scala" />
+		</exec>
+	</target>
+	<target name="MakeDocsJar" description="Create a jar for the ScalaGFX API documentation.">
+		<jar jarfile="target/ScalaGFXDocs.jar" basedir="docs" />
+	</target>
+	<target name="SuperClean">
+		<delete>
+			<fileset dir="target">
+			</fileset>
+			<fileset dir="docs">
+			</fileset>
+		</delete>
+	</target>
 </project>
